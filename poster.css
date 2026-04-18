@@ -575,8 +575,8 @@ main {
 }
 
 .clip-13 {
-  right: 4%;
-  bottom: 3%;
+  right: 1%;
+  bottom: 1%;
   width: 28%;
   --r: -2deg;
 }
@@ -603,7 +603,7 @@ main {
 }
 
 .clip-17 {
-  right: 8%;
+  right: 4%;
   top: 52%;
   width: 18%;
   --r: 0deg;
