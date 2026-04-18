@@ -3,6 +3,7 @@ const ctx = canvas.getContext("2d");
 const confettiButton = document.querySelector("#confettiButton");
 const musicButton = document.querySelector("#musicButton");
 const birthdayAudio = document.querySelector("#birthdayAudio");
+const posters = document.querySelectorAll(".poster");
 
 const pointer = { x: window.innerWidth / 2, y: window.innerHeight / 2, active: false };
 let flecks = [];
@@ -21,6 +22,12 @@ function resizeCanvas() {
   canvas.style.width = `${width}px`;
   canvas.style.height = `${height}px`;
   ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+}
+
+function syncPosterScale() {
+  posters.forEach((poster) => {
+    poster.style.setProperty("--cover-scale", Math.min(1, poster.clientWidth / 720).toFixed(3));
+  });
 }
 
 function seedFlecks() {
@@ -68,6 +75,7 @@ function animate() {
 window.addEventListener("resize", () => {
   resizeCanvas();
   seedFlecks();
+  syncPosterScale();
 });
 
 window.addEventListener("pointermove", (event) => {
@@ -134,4 +142,5 @@ birthdayAudio.addEventListener("ended", stopBirthdaySong);
 
 resizeCanvas();
 seedFlecks();
+syncPosterScale();
 animate();

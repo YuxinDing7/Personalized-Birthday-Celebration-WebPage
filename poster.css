@@ -9,6 +9,14 @@
   --line: rgba(25, 25, 25, 0.16);
 }
 
+@font-face {
+  font-family: "Birthday Hand";
+  src: url("./fonts/segoepr.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -79,7 +87,7 @@ main {
   --cover-scale: 1;
   position: relative;
   width: min(calc(100vw - 24px), 720px);
-  min-height: auto;
+  min-height: 1000px;
   aspect-ratio: 1 / 1.16;
   overflow: hidden;
   color: var(--ink);
@@ -266,7 +274,7 @@ main {
   bottom: 25%;
   margin: 0;
   color: var(--red);
-  font-family: "Segoe Script", "Bradley Hand ITC", cursive;
+  font-family: "Birthday Hand", "Segoe Print", "Bradley Hand ITC", cursive;
   font-size: calc(1.8rem * var(--cover-scale));
   line-height: 1;
   transform: rotate(-6deg);
@@ -760,7 +768,7 @@ main {
 
 .closing-title {
   top: 2%;
-  font-size: 10rem;
+  font-size: calc(6.9rem * var(--cover-scale));
 }
 
 .closing-person {
