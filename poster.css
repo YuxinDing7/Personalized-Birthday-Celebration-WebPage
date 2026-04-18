@@ -86,8 +86,9 @@ main {
 .poster {
   --cover-scale: 1;
   position: relative;
-  width: min(calc(100vw - 24px), 720px);
+  width: min(100vw, 720px);
   min-height: 100vh;
+  max-height: 120vh;
   aspect-ratio: 1 / 1.16;
   overflow: hidden;
   color: var(--ink);
