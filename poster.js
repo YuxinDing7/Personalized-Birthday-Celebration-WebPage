@@ -26,7 +26,8 @@ function resizeCanvas() {
 
 function syncPosterScale() {
   posters.forEach((poster) => {
-    poster.style.setProperty("--cover-scale", Math.min(1, poster.clientWidth / 720).toFixed(3));
+    const scale = Math.min(1, Math.max(0.72, poster.clientWidth / 720));
+    poster.style.setProperty("--cover-scale", scale.toFixed(3));
   });
 }
 
