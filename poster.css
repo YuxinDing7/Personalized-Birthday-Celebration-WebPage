@@ -974,6 +974,8 @@ main {
 @media (max-width: 520px) {
   .poster {
     width: min(100vw, 720px);
+    min-height: 80vh;
+    max-height: 100vh;
   }
 
   .poster-title {
@@ -985,8 +987,8 @@ main {
   .poster-person-wrap {
     right: 12%;
     bottom: 0;
-    width: 96%;
-    height: 68%;
+    width: 86%;
+    height: 70%;
   }
 
   .poster-age {
