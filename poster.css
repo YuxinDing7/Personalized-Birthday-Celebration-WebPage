@@ -985,29 +985,29 @@ main {
   }
 
   .poster-person-wrap {
-    right: 12%;
+    right: 4%;
     bottom: 0;
-    width: 86%;
+    width: 80%;
     height: 70%;
   }
 
   .poster-age {
-    bottom: 40%;
+    bottom: 50%;
   }
 
   .poster-time {
-    bottom: 30%;
+    bottom: 40%;
   }
 
   .poster-cn-title {
     right: 4.8%;
-    top: 29%;
+    top: 32%;
     font-size: calc(1.48rem * var(--cover-scale));
   }
 
   .poster-name {
     right: 9.8%;
-    top: 29%;
+    top: 33%;
     font-size: calc(1.26rem * var(--cover-scale));
   }
 
