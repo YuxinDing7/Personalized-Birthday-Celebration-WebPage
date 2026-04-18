@@ -154,8 +154,8 @@ main {
 
 .poster-person-wrap {
   position: absolute;
-  right: 7%;
-  bottom: 5%;
+  right: 12%;
+  bottom: 0;
   z-index: 5;
   width: 118%;
   height: 82%;
@@ -165,7 +165,7 @@ main {
 .poster-person {
   position: absolute;
   right: 0;
-  bottom: -2%;
+  bottom: 0%;
   width: 100%;
   height: 104%;
   object-fit: contain;
@@ -978,12 +978,13 @@ main {
 
   .poster-title {
     left: 4%;
-    top: 2.4%;
+    top: 5%;
+    font-size: calc(8.5rem * var(--cover-scale));
   }
 
   .poster-person-wrap {
-    right: -2%;
-    bottom: 7%;
+    right: 12%;
+    bottom: 0;
     width: 96%;
     height: 68%;
   }
@@ -999,11 +1000,13 @@ main {
   .poster-cn-title {
     right: 4.8%;
     top: 29%;
+    font-size: calc(1.48rem * var(--cover-scale));
   }
 
   .poster-name {
     right: 9.8%;
     top: 29%;
+    font-size: calc(1.26rem * var(--cover-scale));
   }
 
   .poster-script {
